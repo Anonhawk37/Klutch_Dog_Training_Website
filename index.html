@@ -4,61 +4,163 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Klutch Dog Training</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="top-bar">
-        <span><ion-icon name="call-outline"></ion-icon>206 XXX XXXX</span>
-        <ul>
-            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
-            <li><a href="#"><ion-icon name="logo-youtube"></ion-icon></a></li>
-            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
-        </ul>
+    <div class="fullContainer banner" id="homeSection">
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="Logos/current_Circle_Logo2.png" alt="Klutch Logo">
+                </div>
+
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#homeSection">Home</a>
+                        </li>
+                        <li>
+                            <a href="classesOffered">About Us</a>
+                        </li>
+                        <li>
+                            <a href="Javascript:void(0);">Programs</a>
+                        </li>
+                        <li>
+                            <a href="Javascript:void(0);">Education</a>
+                        </li>
+                        <li>
+                            <a href="Javascript:void(0);">Gallary</a>
+                        </li>
+                        <li>
+                            <a href="Javascript:void(0);">Join Us</a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+        </header>
+        <!-- header end here -->
+
+        <div class="container">
+            <h1>Best Dog Training <br><span>In Seattle</span></h1>
+            <p>
+                Book a free consultation with us today! Even if you don't choose to 
+                schedule a training session, we give you a free write-up showing you 
+                how you can address your dog's annoying behavior. Let us assist you.
+            </p>
+            <Button><i class="fa-solid fa-dog"></i> Book A Free Consultation</Button>
+        </div>
     </div>
+    <!-- homeSection end here -->
 
-    <nav>
-        <div class="logo">
-        <a href=""></a><img src="logo3.png" alt="logo"></a>
-    </div>
-        <div class="toggle">
-        <a href="#"><ion-icon name="menu-outline"></ion-icon></a>
-    </div>
-        <ul class="menu">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">SERVICES</a></li>
-            <li><a href="#">OUR TRAINERS</a></li>
-            <li><a href="#">CONTACT US</a></li>
-        </ul>
-    </nav>
+    <section class="fullContainer" id="classesOffered">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <div class="container">
+            <h2 class="sectionTitle">Classes&nbsp;&&nbsp;Training</h2>
+        
+        <div class="cards">
+            <div class="groupTraining">
+                <img src="Icons/group.svg" alt="group icon">
+                <div class="title">Group Training</div>
+                <p>
+                    Enhance canine behavior and obedience through interactive 
+                    group sessions led by experienced trainers in controlled environments.
+                </p>
+                <button>Get More Details <i class="fa-solid fa-arrow-right-long"></i></button>
+            </div>
+            <!-- Group Training end-->
 
-    <script>
+            <div class="puppyConfinement">
+                <img src="Icons/paw.svg" alt="paw icon">
+                <div class="title">Puppy Confinement</div>
+                <p>
+                    Teach puppies boundaries and manners in a safe, confined 
+                    space with positive reinforcement techniques and expert guidance.
+                </p>
+                <button>Get More Details <i class="fa-solid fa-arrow-right-long"></i></button>
+            </div>
+            <!-- Puppy Confinement end-->
 
-        $(function(){
-            $(".toggle").on("click", function(){
-                if($(".menu").hasClass("active")){
-                    $(".menu").removeClass("active");
-                    $(this).find("a").html("<ion-icon name='menu-outline'></ion-icon>");
-                } else{
-                    $(".menu").addClass("active");
-                    $(this).find("a").html("<ion-icon name='close-outline'></ion-icon>");
-                }
-            });
-        });
+            <div class="correctionTraining">
+                <img src="Icons/clipboard.svg" alt="clipboard icon">
+                <div class="title">Correction Training</div>
+                <p>
+                    Correct undesirable behaviors in dogs using positive reinforcement 
+                    and gentle techniques under the guidance of experienced trainers.
+                </p>
+                <button>Get More Details <i class="fa-solid fa-arrow-right-long"></i></button>
+            </div>
+            <!-- Correction Training end-->
 
-    </script>
-<div class="banner">
-    <div class="container">
-        <h1>Best Dog Training <br><span>In Seattle</span></h1>
-        <p>
-            Book a free consultation with us today! Even if you don't choose to schedule a training
-            session, we give you a free write-up showing you how you can address your dog's annoying 
-            behavior. Let us assist you.
-        </p>
-    </div>
-    <button><i class="fa-solid fa-dog"></i> Book A Free Consultation</button>
-</div>
+            <div class="offLeashTraining">
+                <img src="Icons/off_leash.svg" alt="dog icon">
+                <div class="title">Off Leash Training</div>
+                <p>
+                    Master off-leash control and strengthen the bond between you 
+                    and your dog through structured training sessions outdoors.
+                </p>
+                <button>Get More Details <i class="fa-solid fa-arrow-right-long"></i></button>
+            </div>
+            <!-- Off Leash Training end-->
+
+            <div class="beginnerTraining">
+                <img src="Icons/beginnerTraining.svg" alt="dog icon">
+                <div class="title">Beginner Training</div>
+                <p>
+                    Build foundational obedience and communication skills with tailored 
+                    exercises and positive reinforcement methods in beginner-level dog training.
+                </p>
+                <button>Get More Details <i class="fa-solid fa-arrow-right-long"></i></button>
+            </div>
+            <!-- Beginner Training end-->
+
+            <div class="klutchTraining">
+                <img src="Icons/klutchTraining.svg" alt="dog icon">
+                <div class="title">Klutch Training</div>
+                <p>
+                    Klutch Dog Training specializes in personalized programs to address 
+                    behavior issues and enhance obedience for all breeds.
+                </p>
+                <button>Get More Details <i class="fa-solid fa-arrow-right-long"></i></button>
+            </div>
+            <!-- Klutch Training end-->
+
+            <div class="behavioralCorrection">
+                <img src="Icons/behavioralCorrection.svg" alt="dog icon">
+                <div class="title">Behavioral Correction</div>
+                <p>
+                    Addressing undesirable behaviors in dogs through positive reinforcement, 
+                    training techniques, and understanding canine psychology for lasting results.
+                </p>
+                <button>Get More Details <i class="fa-solid fa-arrow-right-long"></i></button>
+            </div>
+            <!-- Behavioral Correction end-->
+
+            <div class="beginnerLeashTraining">
+                <img src="Icons/beginnerLeashTraining.svg" alt="dog icon">
+                <div class="title">Beginner Leash Training</div>
+                <p>
+                    Introduce leash manners and basic commands to puppies or newly 
+                    adopted dogs with patient guidance and positive reinforcement.
+                </p>
+                <button>Get More Details <i class="fa-solid fa-arrow-right-long"></i></button>
+            </div>
+            <!-- Beginner Leash Training end-->
+
+            <div class="advancedLeashTraining">
+                <img src="Icons/advancedLeashTraining.svg" alt="dog icon">
+                <div class="title">Advanced Leash Training</div>
+                <p>
+                    Elevate obedience and skills with advanced training techniques 
+                    tailored to challenge and refine your dog's abilities.
+                </p>
+                <button>Get More Details <i class="fa-solid fa-arrow-right-long"></i></button>
+            </div>
+            <!-- Advanced Leash Training end-->
+
+        </div>
+    </section>
+    <!-- classesOffered end here -->
+
 </body>
 </html>
