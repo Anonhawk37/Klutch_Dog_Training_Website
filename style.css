@@ -175,6 +175,81 @@ i {
 
 /* Home style end */
 
+/* gettingStarted beginning */
+
+.sectionTitle2 {
+    width: 575px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 0 auto 50px;
+    position: relative;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+
+#gettingStarted {
+    background-color: rgba(190, 157, 157, 0.137);
+    height: 1100px;
+}
+
+#gettingStarted .startingCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 2px;
+    position: relative;
+    height: 350px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#gettingStarted .startingCards > div {
+
+    
+    width: 550px;
+    padding: 35px;
+    color: #444;
+    text-align: left;
+    height: 380px;
+    margin-bottom: 1px;
+    
+}
+
+#gettingStarted .startingCards > div .title {
+    
+    font-size: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    color: var(--themeOrange);
+    padding-bottom: 12px;
+}
+
+#gettingStarted .startingCards > div p {
+    font-size: 16px;
+    padding-top: 8px;
+    font-weight: bold;
+    display: inline;
+}
+
+#gettingStarted .startingCards img {
+    float: left;
+    margin-right: 20px;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 60px; /* Added to keep text from moving to bottom of photo */
+}
+
+#gettingStarted .startingCards .stepTwo {
+        padding-top: 180px;
+}
+
+#gettingStarted .startingCards .stepFour {
+        padding-top: 180px;
+        
+}
+
 /* servicesOffered Start */
 
 #servicesOffered .serviceCards {

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting Started</title>
+
+    <style>
+        :root {
+            --themeOrange: #ae3800;
+            --gray: #efefef;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+
+        
+        body {
+            font-family:  "Poppins", sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 26px;
+        }
+
+
+        .sectionTitle {
+            width: 300px;
+            border-bottom: 3px solid var(--themeOrange);
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bolder;
+            margin: 0 auto 50px;
+            position: relative;
+            padding: 10px 0;
+            text-transform: uppercase;
+        }
+
+        .sectionTitle::after{
+            display: inline-block;
+            content: "";
+            height: 15px;
+            width: 15px;
+            background-color: var(--themeOrange);
+            position: absolute;
+            left: calc(50% - 10px);
+            top: calc(75% - 7px);
+            transform: rotate(45deg) translate(50%, 50%);
+            border: 3px solid #fff;
+        }
+
+        .sectionTitle2 {
+            width: 575px;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 800;
+            margin: 0 auto 50px;
+            position: relative;
+            padding: 10px 0;
+            text-transform: uppercase;
+        }
+
+        section {
+            padding: 100px 0;
+            position: absolute;
+            background-color: rgba(128, 128, 128, 0.137);
+            height: 1100px;
+        }
+
+
+        
+
+        #gettingStarted .startingCards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 2px;
+            position: relative;
+            height: 350px;
+            padding-left: 100px;
+            padding-right: 100px;
+            
+        }
+
+        #gettingStarted .startingCards > div {
+
+            
+            width: 550px;
+            padding: 35px;
+            color: #444;
+            text-align: left;
+            height: 380px;
+            margin-bottom: 1px;
+            
+        }
+
+        #gettingStarted .startingCards > div .title {
+            
+            font-size: 26px;
+            font-weight: 600;
+            text-transform: uppercase;
+            position: relative;
+            color: var(--themeOrange);
+            padding-bottom: 12px;
+        }
+
+        #gettingStarted .startingCards > div p {
+            font-size: 16px;
+            padding-top: 8px;
+            font-weight: bold;
+            display: inline;
+        }
+
+        #gettingStarted .startingCards img {
+            float: left;
+            margin-right: 20px;
+            width: 150px;
+            height: 150px;
+            margin-bottom: 40px;
+        }
+
+        #gettingStarted .startingCards .stepTwo {
+                padding-top: 180px;
+        }
+
+        #gettingStarted .startingCards .stepFour {
+                padding-top: 180px;
+                
+        }
+            
+    </style>
+</head>
+<body>
+    <section class="gettingStartedContainer" id="gettingStarted">
+        <div class="sectionTitle2">How To Get Started With Us</div>
+        <div class="startingCards">
+            <div class="stepOne">
+                 <img src="Pictures/paw_print_one.png" alt="paw print one">
+                    <div class="title">Book a Call With a Trainer</div>
+                    <p>Book a free consultation with us so we can give you your 
+                        free action plan. We believe in helping your dog overcome 
+                        those annoying behaviors.
+                    </p>
+            </div>
+            <!-- End of Step One -->
+
+            <div class="stepTwo">
+                <img src="Pictures/paw_print_two.png" alt="paw print one">
+                <div class="title">Come See Us</div>
+                <p>
+                    Bring your furry friend in for a meet & greet with one of our 
+                    experienced trainers. We will get your ball of joy prepared for 
+                    his or her first session.
+                </p>
+            </div>
+            <!-- End of Step Two -->
+
+            <div class="stepThree">
+                <img src="Pictures/paw_print_three.png" alt="paw print one">
+                   <div class="title">Sign Up</div>
+                   <p>
+                        What are you waiting for? You're so close to getting rid of that 
+                        naughty behavior once and for all. Sign your dog up TODAY!
+                   </p>
+           </div>
+           <!-- End of Step Three -->
+
+           <div class="stepFour">
+               <img src="Pictures/paw_print_four.png" alt="paw print one">
+               <div class="title">Show Your Dog Who's Boss</div>
+               <p>
+                    Using our unique training system, you will understand how 
+                    to command obedience from your dog. Follow through with 
+                    the training and you will see massive results!
+               </p>
+           </div>
+           <!-- End of Step Four-->
+
+        </div>
+    </section>
+</body>
+</html>
