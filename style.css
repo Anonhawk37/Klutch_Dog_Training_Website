@@ -628,13 +628,26 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+    header .container {
+        width: 100%;
+        justify-content: right;
+        padding-right: 10px;
+    }
+
+    .container .logo {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    
     header nav {
-        position: relative;
+        position: absolute;
         border: 2px solid #fff;
         height: 30px;
         width: 30px;
         margin-top: 20px;
         border-radius: 5px;
+        justify-content: right;
     }
 
     header nav:after {
@@ -674,32 +687,142 @@ footer {
         width: 300px;
         background-color: rgba(0, 0, 0, 0.6);
     }
+
     /* navigation Section Ends */
 
     /* banner Section Starts */
 
     .banner {
-        background-position: 65%;
+        display: flex;
+        background-image: none;
+        padding-bottom: 100px;
     }
 
-    .banner p {
-        font-size: 14px;
+    .banner h1 {
+        width: 100%;
+        text-align: center;
     }
 
-    .banner p, .banner h1 {
-        width: 70%;
+    #homeSection .container p {
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+        
+    }
+
+    .bannerButton {
+        display: flex;
+        justify-content: center;
     }
     /* banner Section Ends */
 
+    /* gettingStarted Section Starts Here */
+
+    section #gettingStarted {
+        flex: none;
+        display: inline;
+        background-color: rgba(190, 157, 157, 0.137);
+    }
+
+    #gettingStarted {
+        height: 2150px;
+    }
+
+    #gettingStarted .startingCards {
+        justify-content: center;
+        padding-left: 0px;
+        padding-right: 0px;
+        text-align: center;
+        
+    }
+
+    #gettingStarted .startingCards .stepOne {
+        padding-top: 0px;
+    }
+
+    #gettingStarted .startingCards .stepTwo {
+        padding-top: 0px;
+    }
+
+    #gettingStarted .startingCards .stepThree {
+        padding-top: 0px;
+        
+    }
+
+    #gettingStarted .startingCards .stepFour {
+        padding-top: 0px;
+    }
+
+    #gettingStarted .startingCards img {
+        display: flex;
+        float: none;
+        margin-bottom: 0px;
+        margin-right: auto;
+        margin-left: auto;
+        align-content: center;
+        padding-bottom: 10px;
+    }
+
+    #gettingStarted .startingCards > div {
+        width: 550px;
+        padding: 80px;
+        color: #444;
+        height: auto;
+        margin-bottom: 30px;
+        /*background-color: red; /* Only for Testing */
+    }
+
+    #gettingStarted .title {
+        text-align: center;
+    }
+
+    #gettingStarted .sectionTitle2 {
+        display: flex;
+        width: 100%;
+        font-size: 1.5rem;
+        font-weight: 800;
+        justify-content: center;
+    }
+
+    #gettingStarted .startingCards > div p {
+        display: flex;
+        text-align: center;
+    }
+
+    /* gettingStarted Section Ends Here */
+
+    /* servicesOffered Section Starts */
+
+    #servicesOffered {
+        display: flex;
+        padding-top: 150px;
+    }
+
+    #servicesOffered .serviceCards {
+        
+        justify-content: center;
+        width: fit-content;
+    }
+
+    #servicesOffered .serviceCards .imageToggle {
+            display: none;
+    }
+
+    #servicesOffered .serviceCards > div .buttonToggle {
+        display: inline;
+    }
+
+    /*servicesOffered Section Ends */
+
     /* classesOffered Section Starts */
+
+    #classesOffered {
+        display: flex;
+        flex-direction: row;
+    }
 
     #classesOffered .cards > div:hover {
         width: 350px;
-    }
-
-    #classesOffered {
-        
-        display: flex;
     }
 
     #classesOffered .container h2 {
@@ -707,10 +830,9 @@ footer {
     }
 
     #classesOffered .cards {
-        
         flex: 100%;
         max-width: 100%;
-        height: 2500px;
+        gap: 5px;
         justify-content: center;
     }
 
@@ -719,11 +841,86 @@ footer {
         align-items: center;
     }
     /* classesOffered Section Ends */
+
+    /* Footer Section Starts Here */
+
+    .about .contact .link {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .footer_info {
+        flex-direction: column;
+        
+    }
+
+    .footer_info p {
+        text-align: center;
+    }
+
+    .footer_info h2 {
+        text-align: center;
+    }
+
+    .social-media {
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    .social-media ul {
+        justify-content: center;
+    }
+
+    .social-media ul li {
+        padding: 10px;
+    }
+
+    .social-media ul li a {
+        margin-right: 0px;
+    }
+
+    .link {
+        Width: 100%;
+    }
+
+    .link ul li {
+        text-align: center;
+    }
+
+    .contact ul li  {
+        justify-content: center;
+    }
+
+    /* Footer Section Ends Here */
 }
 
 @media screen and (max-width: 425px) {
 
     /* Navigation Section Starts Here */
+
+    
+    header .container {
+        width: 100%;
+        justify-content: right;
+        padding-right: 10px;
+    }
+
+    .container .logo {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    header nav {
+        position: absolute;
+    }
+
+    header nav ul {
+        position: absolute;
+        right: -400px;
+        top: 53px;
+        transition: 0.5s;
+    }
 
     /* Navigation Section Ends Here */
 
@@ -833,9 +1030,13 @@ footer {
     #servicesOffered {
         display: flex;
         padding-top: 150px;
+        max-width: 100%;
     }
 
     #servicesOffered .serviceCards {
+        display: flex;
+        justify-content: center;
+        width: 100%;
         height: 1400px;
     }
 
@@ -845,6 +1046,10 @@ footer {
 
     #servicesOffered .serviceCards > div .buttonToggle {
         display: inline;
+    }
+
+    #servicesOffered .serviceCards p {
+        
     }
 
     /* Service Section Ends Here */
@@ -890,7 +1095,7 @@ footer {
     }
 
     .footer_info p {
-        
+        text-align: center;
     }
 
     .footer_info h2 {
@@ -927,5 +1132,75 @@ footer {
     }
 
     /* Footer Section Ends Here */
+}
+
+@media screen and (max-width: 320px) {
+
+    header {
+        display: flex;
+    
+    }
+
+    header .container {
+        display: flex;
+    }
+
+    #serviceOffered {
+        width: 100%;
+    }
+
+    #servicesOffered .container {
+        width: 100%;
+    }
+    
+    #servicesOffered .serviceCards{
+        background-color: red;
+        height: 100%;
+    }
+
+    #servicesOffered .serviceCards > div {
+        width: 100%;
+    }
+
+    #classesOffered {
+        height: 3500px;
+    }
+
+    #classesOffered .cards {
+
+        width: 100%;
+        justify-content: center;
+        height: 100%;
+    }
+
+    #classesOffered .cards > div {
+        margin: 0px;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #classesOffered .container {
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    #gettingStarted .startingCards {
+        display: flex;
+        width: 100%;
+
+    }
+
+    #testimonies {
+        margin-top: 0px;
+    }
+
+    .bottomSection {
+        padding: 0px 0px;
+    }
+
+
 }
 /* Responsiveness for main site ends here */
