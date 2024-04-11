@@ -617,18 +617,195 @@ footer {
     
 }
 
-@media screen and (max-width: 1024px) {
-    .banner {
-        background-position: 45%;
-    }
-    .banner h1 {
-        font-size: 2.5rem;
+@media screen and (max-width: 1300px) {
+
+    header .logo {
+        margin-left: 20px;
     }
 
-    
+    header .container {
+        width: 100%;
+        padding-right: 20px;
+    }
+
+    /* banner Section Starts */
+
+    .banner {
+        display: flex;
+        padding-bottom: 100px;
+    }
+
+    .banner h1 {
+        width: 100%;
+        text-align: left;
+        padding: 20px;
+    }
+
+    #homeSection .container p {
+        width: 50%;
+        text-align: left;
+        padding: 20px;
+        
+    }
+
+    .bannerButton {
+        display: flex;
+        justify-content: left;
+        padding: 20px;
+    }
+    /* banner Section Ends */
+
+    /* gettingStarted Section Starts Here */
+
+    section #gettingStarted {
+        display: flex;
+        background-color: rgba(190, 157, 157, 0.137);
+    }
+
+    #gettingStarted {
+        height: 100%;
+        width: 100%;
+    }
+
+    #gettingStarted .startingCards {
+        display: flex;
+        padding-left: 0px;
+        padding-right: 0px;
+        height: 100%;
+    }
+
+    #gettingStarted .startingCards .stepOne {
+        padding-top: 0px;
+        justify-content: left;
+    }
+
+    #gettingStarted .startingCards .stepTwo {
+        padding-top: 200px;
+        
+    }
+
+    #gettingStarted .startingCards .stepThree {
+        padding-top: 0px;
+        
+    }
+
+    #gettingStarted .startingCards .stepFour {
+        padding-top: 200px;
+    }
+
+    #gettingStarted .startingCards img {
+        display: flex;
+        float: left;
+        margin-bottom: 0px;
+        margin-right: auto;
+        margin-left: auto;
+        justify-content: left;
+        padding-bottom: 10px;
+        padding-right: 20px;
+    }
+
+    #gettingStarted .startingCards > div {
+        width: 50%;
+        padding-left: 20px;
+        padding-right: 80px;
+        color: #444;
+        height: auto;
+        margin-bottom: 30px;
+        /* background-color: red;  */
+    }
+
+    #gettingStarted .title {
+        text-align: left;
+    }
+
+    #gettingStarted .sectionTitle2 {
+        display: flex;
+        width: 100%;
+        font-size: 1.5rem;
+        font-weight: 800;
+        justify-content: center;
+    }
+
+    #gettingStarted .startingCards > div p {
+        display: flex;
+        text-align: left;
+    }
+
+    /* gettingStarted Section Ends Here */
+
+    /* servicesOffered Section Starts */
+
+    #servicesOffered {
+        display: flex;
+        padding-top: 150px;
+    }
+
+    #servicesOffered .serviceCards {
+        
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    #servicesOffered .serviceCards .imageToggle {
+            display: none;
+    }
+
+    #servicesOffered .serviceCards > div .buttonToggle {
+        display: inline;
+    }
+
+    /*servicesOffered Section Ends */
+
+    /* classesOffered Section Starts */
+
+    #classesOffered {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        height: 100%;
+    }
+
+    #classesOffered .cards > div:hover {
+        width: 350px;
+    }
+
+    #classesOffered .container h2 {
+        display: flex;
+    }
+
+    #classesOffered .cards {
+        flex: 100%;
+        max-width: 100%;
+        gap: 5px;
+        justify-content: center;
+        height: 100%;
+    }
+
+    #classesOffered .cards > div {
+        margin: 10px 0;
+        align-items: center;
+    }
+
+    #classesOffered .container {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        height: 100%;
+        width: 100%;
+    }
+    /* classesOffered Section Ends */
+
+    /* testimonies section starts */
+
+    #testimonies {
+        margin-top: 0px;
+        height: 100%;
+    }
+
+    /* testimonies section ends */
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 968px) {
     header .container {
         width: 100%;
         justify-content: right;
