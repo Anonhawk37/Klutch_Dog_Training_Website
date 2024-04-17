@@ -1,0 +1,469 @@
+/* Common style start*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css");
+
+
+:root {
+    --themeOrange: #ae3800;
+    --gray: #efefef;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+button,
+body {
+    font-family:  "Poppins", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    font-size: 14px;
+    line-height: 26px;
+}
+
+
+
+/* Common styles end */
+
+header {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    z-index: 2;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .container .logo {
+    padding: 1px 0;
+    height: 85px;
+}
+
+header .container .logo img {
+    height: 100%;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    display: inline-block;
+    height: 85px;
+    line-height: 85px;
+    padding: 0 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: #fff;
+    transition: 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: var(--themeOrange);
+}
+
+.banner {
+    min-height: 50vh;
+    width: 100%;
+    background-image: url("/Pictures/Seattle-Dog-Services-Page.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.banner h1 {
+    margin-top: 150px;
+    display: inline-block;
+    font-size: 3.5rem;
+    color: #fff;
+    text-shadow: 0 0 2px #000;
+    width: 100%;
+    line-height: 4.2rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+/* Banner Section Ends Here */
+
+#groomingSection .container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding-top: 100px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+#groomingSection img {
+    width: 400px;
+    height: 500px;
+}
+
+#groomingSection .grooming {
+    padding-left: 100px;
+}
+
+#groomingSection .grooming h1 {
+    padding: 50px;
+}
+
+.line {
+    width: 130px;
+    height: 5px;
+    background: var(--themeOrange);
+    margin-top: 20px;
+}
+
+#groomingSection .grooming p {
+    padding-top: 20px;
+}
+
+.grooming h3 {
+    
+}
+
+.grooming ul {
+    list-style-type: none;
+}
+
+.grooming li {
+    padding-left: 25px;
+}
+
+.grooming li i {
+    padding-right: 10px;
+    color: var(--themeOrange);
+}
+
+.grooming .pricing li {
+    padding-left: 0px;
+}
+
+.grooming button {
+    border: 1px solid black;
+    background-color: var(--themeOrange);
+    color: #fff;
+    outline: none;
+    padding: 7px 15px;
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.grooming button:hover {
+    background-color: var(--gray);
+    color: var(--themeOrange);
+}
+
+.grooming button i {
+    padding-right: 10px;
+}
+
+#kennelingSection .container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding-top: 100px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+#kennelingSection img {
+    width: 400px;
+    height: 500px;
+}
+
+#kennelingSection p {
+    padding-right: 100px;
+    padding-top: 20px;
+}
+
+#kennelingSection button {
+    border: 1px solid black;
+    background-color: var(--themeOrange);
+    color: #fff;
+    outline: none;
+    padding: 7px 15px;
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#kennelingSection button:hover{
+    background-color: var(--gray);
+    color: var(--themeOrange);
+}
+
+#kennelingSection button i {
+    padding-right: 10px;
+}
+
+#kennelingSection .noSpace {
+    padding-top: 0px;
+}
+
+#kennelingSection p span {
+    font-weight: bold;
+}
+
+#trainingClasses .title h2 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-size: 48px;
+    margin-top: 45px;
+    background-color: var(--gray);
+    color: black
+}
+
+#trainingClasses .title h2 i {
+    padding-right: 10px;
+    padding-left: 11px;
+    padding-top: 10px;
+    color: var(--themeOrange);
+}
+
+#trainingClasses .container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding-top: 100px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+#trainingClasses img {
+    width: 400px;
+    height: 500px;
+}
+
+#trainingClasses .puppyTraining {
+    padding-left: 100px;
+}
+
+#trainingClasses .puppyTraining h1 {
+    padding: 50px;
+}
+
+.line {
+    width: 130px;
+    height: 5px;
+    background: var(--themeOrange);
+    margin-top: 20px;
+}
+
+#trainingClasses .p_separation p {
+    padding-top: 20px;
+    font-size: 16px;
+}
+
+.puppyTraining h3 {
+    padding-top: 15px;
+}
+
+.puppyTraining ul {
+    list-style-type: none;
+}
+
+.puppyTraining li {
+    padding-left: 25px;
+}
+
+.puppyTraining li i {
+    padding-right: 10px;
+    color: var(--themeOrange);
+}
+
+.puppyTraining .pricing li {
+    padding-left: 0px;
+}
+
+.puppyTraining button {
+    border: 1px solid black;
+    background-color: var(--themeOrange);
+    color: #fff;
+    outline: none;
+    padding: 7px 15px;
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.puppyTraining button:hover {
+    background-color: var(--gray);
+    color: var(--themeOrange);
+}
+
+.puppyTraining button i {
+    padding-right: 10px;
+}
+
+.puppyTraining .pricing{
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+.puppyTraining .pricing span {
+    font-size: 16px;
+}
+
+#klutchTraining .container {
+    margin-top: 100px;
+    background-color: var(--themeOrange);
+    color: #fff;
+}
+
+#klutchTraining .container h2 {
+    display: flex;
+    width: 100%;
+    justify-content:  center;
+    font-size: 48px;
+    background-color: black;
+}
+
+#klutchTraining .questions {
+    text-align: left;
+    padding: 40px 150px;
+    display: flex;
+    width: 100%;
+    gap: 50px;
+}
+
+#klutchTraining .questions ul {
+    list-style-type: none;
+}
+
+#klutchTraining .container h2 i {
+    color: var(--themeOrange);
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+
+/* Footer Begins Here */
+
+.bottomSection {
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+.bottomSection a {
+    text-decoration: none;
+    transition: .5s;
+    color: #fff;
+}
+
+.bottomSection ul, li {
+    list-style-type: none;
+}
+
+footer {
+    background-color: rgb(34, 34, 34);
+    color: #fff;
+}
+
+.footer_info {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    padding: 50px 0;
+}
+
+.footer_info .footer_width {
+    padding: 0 15px;
+}
+
+.footer_info h2 {
+    margin-bottom: 20px;
+    color: var(--themeOrange);
+}
+
+.about .contact {
+    width: 40%;
+}
+
+.link {
+    width: 20%;
+}
+
+.social-media {
+    margin-top: 30px;
+}
+
+.social-media ul {
+    display: flex;
+}
+
+.social-media ul li a {
+    display: inline-block;
+    margin-right: 50px;
+    width: 50px;
+    height: 50px;
+    padding-top: 12px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    text-align: center;
+}
+
+.social-media ul li a:hover {
+    background-color: var(--themeOrange);
+    color: #000;
+}
+
+.link ul li a {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.link ul li a:hover {
+    color: var(--themeOrange);
+}
+
+.contact ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.contact ul li span {
+    margin-right: 15px;
+}
+
+.copy-right {
+    padding: 15px 0;
+    text-align: center;
+    background-color: rgb(27, 27, 27);
+}
+
+.copy-right a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Footer Ends Here */
