@@ -133,6 +133,10 @@ header nav ul li a:hover {
     padding-top: 20px;
 }
 
+.grooming p span {
+    font-weight: bold;
+}
+
 .grooming h3 {
     
 }
@@ -202,7 +206,7 @@ header nav ul li a:hover {
     color: #fff;
     outline: none;
     padding: 7px 15px;
-    margin-top: 15px;
+    margin-top: 20px;
     font-size: 16px;
     font-weight: 400;
     border-radius: 3px;
@@ -225,6 +229,19 @@ header nav ul li a:hover {
 
 #kennelingSection p span {
     font-weight: bold;
+}
+
+#kennelingSection li span {
+    font-weight: bold;
+}
+
+#kennelingSection .kenneling h3 {
+    padding: 10px;
+}
+
+#kennelingSection .kenneling ul li i{
+    color: var(--themeOrange);
+    padding-right: 10px;
 }
 
 #trainingClasses .title h2 {
@@ -264,6 +281,10 @@ header nav ul li a:hover {
 
 #trainingClasses .puppyTraining h1 {
     padding: 50px;
+}
+
+#trainingClasses .puppyTraining p span {
+    font-weight: bold;
 }
 
 .line {
@@ -333,7 +354,7 @@ header nav ul li a:hover {
 
 #klutchTraining .container {
     margin-top: 100px;
-    background-color: var(--themeOrange);
+    background-color: #ae3700b7;
     color: #fff;
 }
 
@@ -349,6 +370,7 @@ header nav ul li a:hover {
     text-align: left;
     padding: 40px 150px;
     display: flex;
+    flex-direction: column;
     width: 100%;
     gap: 50px;
 }
@@ -357,12 +379,88 @@ header nav ul li a:hover {
     list-style-type: none;
 }
 
+#klutchTraining .questions ul li {
+    font-weight: bold;
+}
+
 #klutchTraining .container h2 i {
     color: var(--themeOrange);
     padding-top: 10px;
     padding-right: 20px;
     padding-left: 20px;
 }
+
+#klutchTraining .questions h3 {
+    font-size: 24px;
+    color: var(--themeOrange);
+}
+
+/* Private Training Section Starts */
+
+#privateTrainingSection .container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding-top: 100px;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-bottom: 100px;
+}
+
+#privateTrainingSection img {
+    width: 400px;
+    height: 500px;
+}
+
+#privateTrainingSection p {
+    padding-right: 100px;
+    padding-top: 20px;
+}
+
+#privateTrainingSection button {
+    border: 1px solid black;
+    background-color: var(--themeOrange);
+    color: #fff;
+    outline: none;
+    padding: 7px 15px;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#privateTrainingSection button:hover{
+    background-color: var(--gray);
+    color: var(--themeOrange);
+}
+
+#privateTrainingSection button i {
+    padding-right: 10px;
+}
+
+#privateTrainingSection .noSpace {
+    padding-top: 0px;
+}
+
+#privateTrainingSection p span {
+    font-weight: bold;
+}
+
+#privateTrainingSection li span {
+    font-weight: bold;
+}
+
+#privateTrainingSection .private h3 {
+    padding: 10px;
+}
+
+#privateTrainingSection .private ul li i{
+    color: var(--themeOrange);
+    padding-right: 10px;
+}
+
 
 
 /* Footer Begins Here */
