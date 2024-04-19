@@ -29,7 +29,14 @@ p {
     line-height: 26px;
 }
 
+.fullContainer {
+    width: 100%;
+}
 
+.container {
+    width: 1140px;
+    margin: auto;
+}
 
 /* Common styles end */
 
@@ -565,3 +572,113 @@ footer {
 }
 
 /* Footer Ends Here */
+
+@media screen and (max-width: 968px) {
+    header .container {
+        width: 100%;
+        justify-content: right;
+        padding-right: 10px;
+    }
+
+    .container .logo {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    header nav {
+        position: absolute;
+        border: 2px solid #fff;
+        height: 30px;
+        width: 30px;
+        margin-top: 20px;
+        border-radius: 5px;
+        justify-content: right;
+    }
+
+    header nav:after {
+        top: 17px;
+    }
+
+    header nav:before {
+        top: 7px;
+    }
+
+    header nav:after, header nav:before{
+        content: "";
+        height: 2px;
+        width: 17px;
+        background-color: #fff;
+        display: block;
+        position:  absolute;
+        left: 5px;
+    }
+
+    header nav ul {
+        position: absolute;
+        right: -400px;
+        top: 53px;
+        transition: 0.5s;
+    }
+
+    header nav:hover ul {
+        right: -15px;
+    }
+
+    header nav ul li {
+        display: block;
+    }
+
+    header nav ul li a {
+        width: 300px;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+
+    /* Navigation Section Starts Here */
+
+    header .container {
+        width: 100%;
+        justify-content: right;
+        padding-right: 10px;
+    }
+
+    .container .logo {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    header nav {
+        position: absolute;
+    }
+
+    header nav ul {
+        position: absolute;
+        right: -400px;
+        top: 53px;
+        transition: 0.5s;
+        width: 200px;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+
+    header {
+        display: flex;
+        position: none;
+    }
+
+    header .container {
+        display: flex;
+    }
+
+    header nav ul li a {
+        width: 200px;
+    }
+
+}
