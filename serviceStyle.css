@@ -34,8 +34,16 @@ p {
 }
 
 .container {
-    width: 1140px;
+    width: 100%;
     margin: auto;
+}
+
+.line {
+    width: 130px;
+    height: 5px;
+    background: var(--themeOrange);
+    margin-bottom: 20px;
+    margin-top: 5px;
 }
 
 /* Common styles end */
@@ -127,13 +135,6 @@ header nav ul li a:hover {
 
 #groomingSection .grooming h1 {
     padding: 50px;
-}
-
-.line {
-    width: 130px;
-    height: 5px;
-    background: var(--themeOrange);
-    margin-top: 20px;
 }
 
 #groomingSection .grooming p {
@@ -294,13 +295,6 @@ header nav ul li a:hover {
     font-weight: bold;
 }
 
-.line {
-    width: 130px;
-    height: 5px;
-    background: var(--themeOrange);
-    margin-top: 20px;
-}
-
 #trainingClasses .p_separation p {
     padding-top: 20px;
     font-size: 16px;
@@ -363,6 +357,10 @@ header nav ul li a:hover {
     margin-top: 100px;
     background-color: #ae3700b7;
     color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
 }
 
 #klutchTraining .container h2 {
@@ -573,6 +571,89 @@ footer {
 
 /* Footer Ends Here */
 
+/* Responsiveness Starts Here */ 
+
+@media screen and (min-width: 1645px){
+
+    .banner h1 {
+        display: flex;
+        justify-content: center;
+        margin-top: 0px;
+        padding-top: 300px;
+        font-size: 5.5rem;
+    }
+
+    #groomingSection .container {
+        max-width: 1300px;
+    }
+
+    #kennelingSection .container {
+        max-width: 1300px;
+    }
+
+    #trainingClasses .container {
+        max-width: 1300px;
+    }
+
+    #privateTrainingSection .container {
+        max-width: 1300px;
+    }
+
+    .footer_info {
+        justify-content: center;
+        gap: 400px;
+    }
+
+    #klutchTraining .centerContainer {
+        max-width: 1300px;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin: auto;
+    }
+
+}
+
+@media screen and (max-width: 1024px){
+
+    #groomingSection .container {
+        padding-top: 100px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #kennelingSection .container {
+        padding-top: 100px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #trainingClasses .container {
+        padding-top: 100px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #privateTrainingSection .container {
+        padding-top: 100px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 100px;
+    }
+
+    /* footer section starts */
+
+    .about .contact {
+        width: 35%;
+    }
+
+    .link {
+        width: 30%;
+    }
+}
+
 @media screen and (max-width: 968px) {
     header .container {
         width: 100%;
@@ -634,7 +715,159 @@ footer {
         background-color: rgba(0, 0, 0, 0.6);
     }
 
+    /* Header styles end */
+
 }
+
+@media screen and (max-width: 898px){
+
+    #groomingSection .container {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    #groomingSection .grooming {
+        padding-left: 0px;
+    }
+
+    #groomingSection img {
+        display: none;
+    }
+
+    #kennelingSection .container {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    #kennelingSection img {
+        display: none;
+    }
+
+    #kennelingSection p {
+        padding-right: 0px;
+    }
+
+    #trainingClasses .container {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    #trainingClasses img {
+        display: none;
+    }
+
+    #trainingClasses .puppyTraining {
+        padding-left: 0px;
+    }
+
+    #privateTrainingSection .container {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    #privateTrainingSection p {
+        padding-right: 0px;
+    }
+
+    #privateTrainingSection img {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 787px){
+    .about .contact .link {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .footer_info {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 500px){
+
+    #groomingSection .container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    #kennelingSection .container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    #trainingClasses .container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    #privateTrainingSection .container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    #klutchTraining .questions {
+        padding: 40px 40px;
+    }
+
+    #trainingClasses .title {
+        text-align: center;
+    }
+
+    /* footer section starts */
+
+    .about .contact .link {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .footer_info {
+        flex-direction: column;
+        
+    }
+
+    .footer_info p {
+        text-align: center;
+    }
+
+    .footer_info h2 {
+        text-align: center;
+    }
+
+    .social-media {
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    .social-media ul {
+        justify-content: center;
+    }
+
+    .social-media ul li {
+        padding: 10px;
+    }
+
+    .social-media ul li a {
+        margin-right: 0px;
+    }
+
+    .link {
+        Width: 100%;
+    }
+
+    .link ul li {
+        text-align: center;
+    }
+
+    .contact ul li  {
+        justify-content: center;
+    }
+
+    /* Footer Section Ends Here */
+}
+
 
 @media screen and (max-width: 425px) {
 
