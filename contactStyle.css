@@ -18,6 +18,8 @@ html {
 }
 
 .fullContainer {
+
+    display: grid;
     width: 100%;
 }
 
@@ -264,6 +266,12 @@ header nav ul li a:hover {
 
 /* Responsive Design */
 
+@media screen and (max-width: 1230px) {
+    body {
+        background: var(--themeOrange);
+    }
+}
+
 @media screen and (max-width: 991px) {
     body {
         background: var(--themeOrange);
@@ -369,6 +377,13 @@ header nav ul li a:hover {
         background-color: rgba(0, 0, 0, 0.6);
     }
 
+}
+
+@media screen and (max-width: 590px) {
+    .contactUs {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
 @media screen and (max-width: 425px) {
