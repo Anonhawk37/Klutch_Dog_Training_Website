@@ -118,8 +118,8 @@ header nav ul li a:hover {
 }
 
 .banner {
+    display: flex;
     min-height: 100vh;
-    width: 100%;
     background-image: url("/Pictures/banner_background.png");
     background-size: cover;
     background-attachment: fixed;
