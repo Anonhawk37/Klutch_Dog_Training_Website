@@ -96,7 +96,7 @@ header nav ul li a:hover {
 .banner {
     min-height: 50vh;
     width: 100%;
-    background-image: url("/Pictures/Seattle-Dog-Services-Page.jpg");
+    background-image: url("Pictures/Seattle-Dog-Services-Page.jpg");
     background-size: cover;
     background-attachment: fixed;
 }
