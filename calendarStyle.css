@@ -200,6 +200,39 @@ footer {
 
 /* Responsiveness Starts Here */ 
 
+@media screen and (min-width: 1645px){
+
+    .banner h1 {
+        display: flex;
+        justify-content: center;
+        margin-top: 0px;
+        padding-top: 300px;
+        font-size: 5.5rem;
+    }
+
+    #groomingSection .container {
+        max-width: 1300px;
+    }
+
+    #kennelingSection .container {
+        max-width: 1300px;
+    }
+
+    #trainingClasses .container {
+        max-width: 1300px;
+    }
+
+    #privateTrainingSection .container {
+        max-width: 1300px;
+    }
+
+    .footer_info {
+        justify-content: center;
+        gap: 400px;
+    }
+
+}
+
 @media screen and (max-width: 1024px) {
 
     /* Footer Start */
@@ -278,7 +311,7 @@ footer {
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 787px) {
 
     .about .contact .link {
         width: 100%;
@@ -288,6 +321,57 @@ footer {
     .footer_info {
         flex-direction: column;
     }
+}
+
+@media screen and (max-width: 500px) {
+    .about .contact .link {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .footer_info {
+        flex-direction: column;
+        
+    }
+
+    .footer_info p {
+        text-align: center;
+    }
+
+    .footer_info h2 {
+        text-align: center;
+    }
+
+    .social-media {
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    .social-media ul {
+        justify-content: center;
+    }
+
+    .social-media ul li {
+        padding: 10px;
+    }
+
+    .social-media ul li a {
+        margin-right: 0px;
+    }
+
+    .link {
+        Width: 100%;
+    }
+
+    .link ul li {
+        text-align: center;
+    }
+
+    .contact ul li  {
+        justify-content: center;
+    }
+
+    /* Footer Section Ends Here */
 }
 
 @media screen and (max-width: 425px) {
