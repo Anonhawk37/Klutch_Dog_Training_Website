@@ -63,7 +63,7 @@ header .container {
 header .container .logo {
     padding: 1px 0;
     height: 85px;
-    padding-left: 75px;
+    margin-left: 80px;
 }
 
 header .container .logo img {
@@ -72,7 +72,7 @@ header .container .logo img {
 
 header nav ul {
     list-style-type: none;
-    padding-right: 75px;
+    padding-right: 100px;
 }
 
 header nav ul li {
@@ -667,6 +667,10 @@ footer {
         display: flex;
         width: 100%;
         justify-content: center;
+    }
+
+    header .container .logo {
+        margin-left: 0px;
     }
     
     header nav {

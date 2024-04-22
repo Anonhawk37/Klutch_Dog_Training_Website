@@ -367,6 +367,7 @@ i {
     border-radius: 3px;
     cursor: pointer;
     transition: 0.3s;
+    text-decoration: none;
 }
 
 #classesOffered .cards > div:hover button {
@@ -1141,6 +1142,10 @@ footer {
         width: 100%;
         justify-content: center;
     }
+
+    header .container .logo {
+        padding-left: 0px;
+    }
     
     header nav {
         position: absolute;
@@ -1294,6 +1299,10 @@ footer {
 
     #classesOffered {
         display: flex;
+    }
+
+    #classesOffered .container {
+        padding-bottom: 500px;
     }
 
     #classesOffered .container h2 {
